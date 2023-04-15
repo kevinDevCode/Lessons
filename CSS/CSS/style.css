@@ -1,0 +1,240 @@
+#titulo 
+{  /* Seleccionador para modificar las etiquetas de título*/
+    color: tomato;
+}
+p.texto 
+{ /* Seleccionadior para modificar las etiquetas <p> pero con un id que contenga la palabra texto*/
+    color: slateblue;
+}
+p.especial 
+{ /* Seleccionador para modificar las etiquetas <p> pero con un id que contenga la palabra especial */
+    color: mediumseagreen;
+}
+div p 
+{ /* Seleccionador para modificar las etiquetas <p> dentro de un div */
+    color: aquamarine;
+}
+div h2, div h3 { /* Seleccionador para poder modificar varias cosas a la ves ya sea dentro de un div o no */
+    color: brown;
+}
+* 
+{ /* Seleccionador que selecciona todas las etiquetas html y las modifica */
+    /* En este seleccionador solo puede modificar lo que no se haya modificado en otros seleccionadores */
+    /* Por ejemplo el color que ya está modificado en otros seleccionadores, ya no se puede modificar en este seleccionador */
+    font-size: 24 px;
+}
+
+/*
+.color {
+    color: #000000;  es una manera de utilizar el color, cada dos ceros representa red,green,blue
+    color: #000; Es una manera de seleccionar color, con valores del 0 a f
+}
+.color
+{
+    color: rgb(0, 170, 170); Es una manera de seleccionar color, con valores de 0(negro) a 255(blanco)
+}
+*/
+.color{
+    /* --- border: 5px black; */
+    /*
+    Los diseños de borde más usados son:
+    -dotted
+    -dashed
+    -solid
+    -double
+    ----------
+    diseños que dan aspecto 3D
+    -groove
+    -ridge
+    -inset
+    -outset
+    -------------
+    -none
+    -hidden
+    */
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 2rem;
+}
+#fondo /*Se necesita el # para poder llamar el id de un article*/
+{
+    color: aliceblue;
+    background-color: rgba(255,0,0,1); /* opacity: 0.3;  Indica la opacidad de todo el elemento(fondo y palabras) */
+    height: 400px; /* Height of the image */
+    background-image: url("Ellie.jpg");
+    background-repeat: no-repeat; /* The image background won´t repat to fill
+    the empty space, "repeat-x" will repeat only in the axis X, and
+    "repeat-y" will repeat only in the axis y */ 
+    background-position: left top; /* Función que sirve para poder mover dentro
+    de un borde la imagen que tenemos de fondo si este es menor a los límites de borde*/
+    background: #f00 url("Ellie.jpg") repeat-y center bottom; /* Cuando se utiliza la funcion
+    de background para hacer todo el trabajo de cada función que vimos en este apartado
+    necesitamos que colocar después de background, "background-size" */
+    background-size: 1000px 400px; /*Se puede colocar en background-size un 
+    valor de píxeles entre otras como CONTAIN que te distribuye tu imagen de la mejor manera como un fondo*/
+}
+.margen
+{
+    background-color: chocolate;
+    margin: 15px 20px 25px 30px; /*Primer valor es el margen de arriba, segundo valor es el de la derecha
+    tercer valor es de abajo, y el último es el de la izquierda */
+    padding: 30px 25px 20px 15px; /* Genera espaciados dentro de los margenes para que los elementos no se encuentren encimados uno en otro*/
+    /*En padding, cuando solo pones 2 valores, son el primero de vertical y segundo horizontal,esto aplica para margin igual*/
+    border: solid 1px black ;
+    height: 100px;
+    width: 50px;
+    overflow: scroll; /*Con esta función definimos que si queremos que el texto que está adentro
+    de este margen se esconda lo que no se pueda ver(hidden) o si hacemos que tenga un scroll para ver
+    todo lo que no se pueda ver con el margen */
+    outline: 1px solid red; /*Un borde que esta fuera del border pero antes del margin*/ 
+}
+.text
+{
+    font-family: 'Silkscreen',sans-serif; /*Sirve para cargar fuentes distinta a la estandar,
+    primero intentará cargar verdana, si no se puede cargará geneva y así hasta que cargue uno*/
+
+    text-align: center; /* Sirve para alinear TEXTO en la página, puede ser left,center y right*/
+    
+    text-decoration: overline; /*Sirve para colocar un subrayado, puede ser "none" que es el que 
+    viene por defecto(no pone nada), "underline" es para subrayar el texto, "line-throug" es
+    para colocar una linea en las palabras, "overline" sirve para colocar una linea arriba del texto*/
+    
+    text-shadow: 3px 5px 5px yellow; /*Sirve para generar una sombra, primer valor es cuanto se va a mover
+    a la derecha, segundo valor es cuanto se va a mover hacia abajo, tercer valor cuando queremos de difuminado
+    en el texto sombra (si no se pone este valor, quedará con un texto encima de otro), el último valor es 
+    que color se pondrá en el sombreado*/
+}
+/*---------Todos estas funciones son cuando nosotros tenemos links(esta funcion sirve 
+para que todos los links sean contados y queremos que ese link tenga ciertos cambios en ciertas acciones--------*/
+/* "a:link" En este punto, nos referimos que queremos que pase cuando aparezca el link en la página web*/
+a:link
+{
+    background-color: rgb(142, 184, 204);
+    font-family: 'Silkscreen',sans-serif;
+    /*"color: " Sirve para colocarle un color al link cuando aparece*/
+    color: blueviolet;
+}
+a:visited /*Esta función solo puede ser usada DESPUÉS de link*/
+{
+    background-color: rgb(142, 184, 204);
+    font-family: 'Silkscreen',sans-serif;
+    color: gray;
+}
+/* "a:hover" Sirve para cuando nosotros arrastramos el mouse en el link*/
+a:hover /*Esta función solo puede ser usada DESPUÉS de visited*/
+{
+    background-color: rgb(142, 184, 204);
+    font-family: 'Silkscreen',sans-serif;
+    color:rgba(255,255,39,0.5)
+}
+/* "a:active" Sirve para colocarle una acción al link cunado le damos un click con el mouse*/
+a:active /*Esta función solo puede ser usada DESPUÉS de hover*/
+{
+    background-color: rgb(142, 184, 204);
+    font-family: 'Silkscreen',sans-serif;
+    color: red;
+}
+ul
+{
+    background-color: cyan;
+    list-style-type:none; /* Nota: Sirve para quitar o cambiar el estilo de la lista*/
+    padding-left: 0;  /* Nota: Sirve para quitar o modificar el padding de nuestro background */
+    /*list-style-position: inside; Sirve para que el texto que cambie de línea, este como texto normal*/
+}
+table /*Se llama a todas las etiquetas que sean de "table" */
+{
+    width: 100%; /*El ancho que va a tomar en la pantalla la tabla*/
+    border-collapse: collapse; /*Sirve para hacer que en las tablas tengan bordes comunes*/
+}
+th,td /*Llama a las etiquetas de "th" y "td" para poder hacer modificaciones*/
+{
+    border: solid 1px #eee; /*El diseño del borde de cada columna y fila para crear cuadros que conformen la tabla,
+    viene en conjunto con border-collapse*/
+    padding: 5px; /*Espaciado entre celdas*/
+}
+
+th /*Llama solamente a las etiquetas th*/
+{
+    background-color: bisque;
+    color: black;
+    text-align: left; /*Alinea el texto dentro de cada celda*/
+}
+tr:nth-child(even) /*Manda a llamar las etiquetas tr, "nth-child()" Sirve para mencionar las celdas que se
+quieran tomar, "even" es para las impares y "odd" es para pares*/
+{
+    background-color: #eee;
+}
+tr:hover /*Sirve cuando pasas el mouse en la celda genere una acción*/
+{
+background-color: #aaa;
+cursor: pointer; /*Cambie el cursor del mouse a una manita*/
+}
+
+span
+{
+    display: block; /*varios span seguidos, se ponen uno alado de otro y no abajo de otro
+    como los divs, para eso sirve display */
+    /*"display:none" Hace que los elementos queden ocultos a los usuarios*/
+    /*"visibility:hidden;" Sirve para también ocultar los elementos de esta etiqueta*/
+    max-width: 300px; /*Máximo de píxeles que puede tener esta etiqueta,
+    osea que si queremos achicar más la página, no se podrá*/
+    background-color: #f00;
+}
+.inline
+{
+    display: inline; /*Deja que otras etiquetas que tengan este tipo de display
+    puedan ser escritos uno alado de otro y no uno abajo de otro*/
+    /*Etiquetas de HTML que vienen por defecto con inline son: 
+    -Span
+    -ancoretag(links)
+    -img
+    */
+}
+#position
+{
+    position: static; /*Posiciona el id en distintas formas, "relative" posiciona
+    el elemento dependiendo de donde debiera estar posicionado este elemento, static es 
+    el estandar de toda etiqueta, "fixed" Posicona el elemento dependiendo de lo que nosotros
+    estamos viendo en el explorador,"absolute" se utiliza para que la etiqueta se apegue al
+    child más cercano, sino hay se va al body,"sticky" combinacion de absoulute y fixed*/
+    left: 20px;
+    /*top: 25px;*/
+}
+.left
+{
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.right
+{
+    float: right;
+}
+.container
+{
+    height: 200px;
+}
+.column
+{
+    margin: 0px;
+    padding: 10px 0px;
+    width: 33.3%;
+}
+.inline-block
+{
+    display: inline-block; /*La propiedad en "display" de "inline-block" coloca valores
+    con esta clase una alado de otra y le puedes asignar valores de "width" 
+    & "height", CASO contrario a solamente "inline" que no permite valores 
+    de "width" & "height" */
+    height: 55px;
+    background-color: red;
+}
+.center
+{
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+}

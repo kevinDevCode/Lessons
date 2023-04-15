@@ -1,0 +1,15 @@
+D:\Programming\c#\MiProgram\MiProgram\bin\Debug\net6.0\MiProgram.exe
+D:\Programming\c#\MiProgram\MiProgram\bin\Debug\net6.0\MiProgram.deps.json
+D:\Programming\c#\MiProgram\MiProgram\bin\Debug\net6.0\MiProgram.runtimeconfig.json
+D:\Programming\c#\MiProgram\MiProgram\bin\Debug\net6.0\MiProgram.dll
+D:\Programming\c#\MiProgram\MiProgram\bin\Debug\net6.0\MiProgram.pdb
+D:\Programming\c#\MiProgram\MiProgram\obj\Debug\net6.0\MiProgram.csproj.AssemblyReference.cache
+D:\Programming\c#\MiProgram\MiProgram\obj\Debug\net6.0\MiProgram.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\c#\MiProgram\MiProgram\obj\Debug\net6.0\MiProgram.AssemblyInfoInputs.cache
+D:\Programming\c#\MiProgram\MiProgram\obj\Debug\net6.0\MiProgram.AssemblyInfo.cs
+D:\Programming\c#\MiProgram\MiProgram\obj\Debug\net6.0\MiProgram.csproj.CoreCompileInputs.cache
+D:\Programming\c#\MiProgram\MiProgram\obj\Debug\net6.0\MiProgram.dll
+D:\Programming\c#\MiProgram\MiProgram\obj\Debug\net6.0\refint\MiProgram.dll
+D:\Programming\c#\MiProgram\MiProgram\obj\Debug\net6.0\MiProgram.pdb
+D:\Programming\c#\MiProgram\MiProgram\obj\Debug\net6.0\MiProgram.genruntimeconfig.cache
+D:\Programming\c#\MiProgram\MiProgram\obj\Debug\net6.0\ref\MiProgram.dll

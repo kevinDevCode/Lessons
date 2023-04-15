@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primera web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <table style="width: 500px;">
+        <!-- tr es Table Row -->
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Lenceria </td>
+                <td>$500</td>
+            </tr>
+            <tr>
+                <td>Tines</td>
+                <td>$40</td>
+            </tr>
+            <tr>
+                <td>Ropa de baño </td>
+                <td>$300</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td></td>
+            <td>Total: $840</td>
+        </tfoot>
+    </table>
+    <!-- ul es lista no ordenada -->
+    <ul>
+        <!-- li es list item-->
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+    <!-- ol es lista ordenada -->
+    <ol>
+        <li value="50">Elemento 5</li>
+        <li>Elemento 6</li>
+        <ol>
+            <li style="list-style-type:lower-alpha ;"> elemento sub 1</li>
+            <li style="list-style-type:lower-alpha ;"> elemento sub 2</li>
+            <li style="list-style-type:lower-alpha ;"> elemento sub 3</li>
+        </ol>
+        <li>Elemento 7</li>
+        <li>Elemento 8</li>
+    </ol>
+
+    <form action="/formulario" method="post">
+        <label for="nombre"> Nombre </label>
+        <input value="Kevin" type="text" id="nombre" name="nombre" placeholder="Nombre"/>
+        <br> <br>
+        <label for="apellido"> Apellido </label>
+        <input value="Reynold" type="text" id="apellido" name="apellido" placeholder="Apellido"/>
+        <br> <br>
+        <label for = "comentario"> comentario </label>
+        <textarea cols="30" rows="5" id="comentario" type="text" placeholder="Ingrese comentario.." name="comentario"> Tostiloco </textarea>
+        <br><br>
+        <button type="button">Enviar con js</button>
+        <button type="reset">reset</button>
+        <button type="submit">submit</button>
+
+    </form>
+    <h1> Mi primer heading </h1>
+    <h2> Mi segundo heading </h2>
+    <h3> Mi tercer heading </h3>
+    <h4> Mi cuarto heading </h4>
+    <h5> Mi quinto heading <h/5>
+    <h6> hola soy kevin </h6>
+    <hr>
+    <p> hoy es un día normal. </p>
+    <h2> ¿Qué se me antoja hacer en un día normal? </h2>
+    <p> 
+        se me antoja una hamburguesa,<br> 
+        posiblemente de a <span style="color: blue">fuego lento.</span>
+    </p>
+    <!--Comentario que no va aparecer en la página web. -->
+    <a target="_blank" href= "https://www.google.com/"> ir a google </a>
+    <br>
+    <img src="img/iron man.jpg" width="400" height="600" />
+</body>
+</html>

@@ -1,0 +1,9 @@
+COSAS QUE DEBO DE APRENDER PARA SER UN PROGRAMADOR MUNDIAL.
+-GIT
+-BASES DE DATOS(MongoDB,DynamoDB,MySQL,Postgres)
+-JAVASCRIPT (Se aplica para todo)
+-ESPECIALIZACION (Buscar cual especialización tiene salida laboral muy buena y aprenderla)
+-RENDIMIENTO Y MANTENIBILIDAD (Diccionarios, Algoritmos de búsqueda, Big O notation) (en su mayoria todo esta parte es opiniones)
+
+ESPECIALIZACIONES CON SALIDA LABORAL.
+-

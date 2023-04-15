@@ -1,0 +1,11 @@
+Poder Mover las Piezas:
+-tomar la pieza
+-Analizar los posibles lugares que puede dejarse la pieza en todo el tablero
+-remarcar con otro color donde puede ser dejado
+-jugador deja en uno de los posibles lugares y pasa juego al otro jugador.
+
+Punto 2:
+-Al momento de tomar la pieza, empieza el análisis.
+-Class PathFinding piece.
+- Obtener la localización de la pieza en el momento que se toma.
+- analizar el movimiento que puede hacer esa pieza.
